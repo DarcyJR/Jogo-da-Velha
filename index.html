@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_esquerdo">
+            <div class="esquerdo_reset">
+                <button class="btn" onclick="reset()">RESET</button>
+            </div>
+            <div class="esquerdo_radio">
+                <input type="radio" name="adversario"  checked/>Usuários
+                <input type="radio" name="adversario"  />Computador
+            </div>
+            <!--<div class="esquerdo_nivel">
+                <input type="radio" name="nivel"  checked/>Fácil
+                <input type="radio" name="nivel"  />Médio
+                <input type="radio" name="nivel"  />Difícil
+            </div>-->
+
+        </div>
+        <div class="container_main">
+            <div id="um" class="grid_um style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="dois" class="grid_dois style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="tres" class="grid_tres style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="quatro" class="grid_quatro style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="cinco" class="grid_cinco style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="seis" class="grid_seis style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="sete" class="grid_sete style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="oito" class="grid_oito style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+            <div id="nove" class="grid_nove style_font control" onmouseover="mouseOver(this.id)"
+                onmouseout="mouseOut(this.id)" onclick="jogada(this.id)">
+            </div>
+        </div>
+        <div class="container_direito">
+            <div class="placar">
+                <div class="grid_placar">PLACAR</div>
+                <div class="grid_x">
+                    X
+                </div>
+                <div class="grid_o">
+                    O
+                </div>
+                <div class="grid_pontos_x">
+                    0
+                </div>
+                <div class="grid_pontos_o">
+                    0
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
