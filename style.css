@@ -1,23 +1,24 @@
-body{
+body {
     margin: 0;
     background-color: rgb(87, 85, 85);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container{
+.container {
     margin-top: 30px;
     display: grid;
     grid-template-areas: "Ala_um Ala_dois Ala_tres";
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-.container_esquerdo{
-    grid-area:  Ala_um;
+.container_esquerdo {
+    grid-area: Ala_um;
     text-align: center;
     color: white;
     /*padding: 10px;*/
 }
 
-.btn{
+.btn {
     margin-top: 250px;
     height: 50px;
     width: 100px;
@@ -27,109 +28,171 @@ body{
     border-color: white;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(89, 89, 89);
 }
 
-.container_main{
+.container_main {
     grid-area: Ala_dois;
     display: grid;
     grid-template-areas: "um dois tres" "quatro cinco seis" "sete oito nove";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vh 30vh 30vh; 
+    grid-template-rows: 30vh 30vh 30vh;
     grid-gap: 10px;
     /*background: black;*/
 }
 
-.container_direito{
+.container_direito {
     grid-area: Ala_tres;
     text-align: center;
 }
 
-.placar{
+.placar {
     margin-top: 200px;
+    margin-bottom: 200px;
     display: grid;
     grid-template-areas: "gplacar gplacar" "x1 o1" "pontos_x pontos_o";
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vh 10vh 10vh;
 }
 
-.placar{
-    margin-bottom: 200px;
-}
-
-.grid_placar{
+.grid_placar {
     grid-area: gplacar;
     color: white;
 }
 
-.grid_x{
+.grid_x {
     grid-area: x1;
     font-size: 30px;
     color: white;
 }
 
-.grid_o{
+.grid_o {
     grid-area: o1;
     font-size: 30px;
     color: white;
 }
 
-.grid_pontos_x{
+.grid_pontos_x {
     grid-area: pontos_x;
     font-size: 30px;
     color: white;
 }
 
-.grid_pontos_o{
+.grid_pontos_o {
     grid-area: pontos_o;
     font-size: 30px;
     color: white;
 }
 
-.style_font{
+.style_font {
     font-size: 150px;
     text-align: center;
 }
 
-.grid_um{
+.grid_um {
     grid-area: um;
     background: rgb(255, 255, 255);
 }
-.grid_dois{
+
+.grid_dois {
     grid-area: dois;
     background: rgb(255, 255, 255);
 }
-.grid_tres{
+
+.grid_tres {
     grid-area: tres;
-    background:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 }
-.grid_quatro{
+
+.grid_quatro {
     grid-area: quatro;
     background: rgb(255, 255, 255);
 }
-.grid_cinco{
+
+.grid_cinco {
     grid-area: cinco;
     background: rgb(255, 255, 255);
 }
-.grid_seis{
+
+.grid_seis {
     grid-area: seis;
     background: rgb(255, 255, 255);
 }
-.grid_sete{
+
+.grid_sete {
     grid-area: sete;
     background: rgb(255, 255, 255);
 }
-.grid_oito{
+
+.grid_oito {
     grid-area: oito;
     background: rgb(255, 255, 255);
 }
-.grid_nove{
+
+.grid_nove {
     grid-area: nove;
     background: rgb(255, 255, 255);
 }
 
+/*responsive*/
+/*tablet*/
+@media only screen and (max-width: 800px) {
 
+    .style_font {
+        font-size: 100px;
+        text-align: center;
+    }
 
+    .container {
+        margin: 20px;
+        margin-top: 10px;
+        display: grid;
+        /*grid-template-areas: "Ala_um Ala_dois Ala_tres";*/
+        grid-template-areas: "Ala_um" "Ala_dois" "Ala_tres";
+        grid-template-columns: 1fr;
+    }
 
+    .container_esquerdo {
+        grid-area: Ala_tres;
+    }
+
+    .container_main {
+        grid-area: Ala_dois;
+        display: grid;
+        grid-template-areas: "um dois tres" "quatro cinco seis" "sete oito nove";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vh 20vh 20vh;
+        grid-gap: 10px;
+        /*background: black;*/
+        /*display: none;*/
+    }
+
+    .container_direito {
+        grid-area: Ala_um;
+        /*text-align: center;*/
+    }
+
+    .placar {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: grid;
+        grid-template-areas: "gplacar gplacar" "x1 o1" "pontos_x pontos_o";
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 5vh 5vh 7vh;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .grid_x,
+    .grid_o,
+    .grid_pontos_x,    
+    .grid_pontos_o {
+        font-size: 20px;
+    }
+
+    
+}
