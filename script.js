@@ -150,9 +150,9 @@ function controleVitoria(valorUm, valorDois, valorTres, simbolo) {
 
   //valida vitoria
   if (verifica === false) {
-    control[valorUm].style.backgroundColor = "blue"
-    control[valorDois].style.backgroundColor = "blue"
-    control[valorTres].style.backgroundColor = "blue"
+    control[valorUm].style.backgroundColor = "rgb(3, 255, 162)"
+    control[valorDois].style.backgroundColor = "rgb(3, 255, 162)"
+    control[valorTres].style.backgroundColor = "rgb(3, 255, 162)"
     //possibilita que nao haja ponto duplo dentro do mesmo jogo
     verifica = true
     return
